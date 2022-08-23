@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(-45deg, purple, orangered );
+    padding: 1.5em;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+body{
+    background-color: #222;
+}
+
+.container{
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 9em 0 0;
+}
+
+.post{
+    border-bottom: 3px solid white;
+    border-image: linear-gradient(-45deg, purple, orangered ) 1;
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
+}
+
+h3{
+    color: palevioletred;
+    text-transform: capitalize;
+}
+
+.post:last-child{
+    border-bottom: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+}
+
+form > *{
+    margin: 0.25em 0;
+    font-family: 'Karla', sans-serif;
+}
+
+form label{
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+form input,
+form textarea{
+    color: #222;
+    border: none;
+    background-image: linear-gradient(-45deg, palevioletred, lightsalmon);
+    border-radius: 5px;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+form input{
+    font-weight: bold;
+}
+
+form textarea{
+    min-height: 8em;
+    line-height: 1.5em;
+}
+
+form button{
+    font-size: 1.2rem;
+    width: max-content;
+    display: block;
+    margin: 1em auto;
+    background-image: linear-gradient(-45deg, purple, orangered );
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: transform 0.25s;
+}
+
+form button:hover,
+form button:focus{
+    transform: scale(1.1);
+    cursor: pointer;
+}
