@@ -77,6 +77,7 @@ form input{
 form textarea{
     min-height: 8em;
     line-height: 1.5em;
+    resize: none;
 }
 
 form button{
